@@ -2,7 +2,7 @@
 
 import './czi-mathquill-editor.css';
 import * as MathQuillEditorSymbols from './MathQuillEditorSymbols';
-import MathQuill from 'node-mathquill/build/mathquill.js';
+import 'node-mathquill/build/mathquill.js';
 import MathQuillEditorSymbolsPanel from './MathQuillEditorSymbolsPanel';
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -16,7 +16,7 @@ import jquery from 'jquery';
 
 import type {MathQuillEditorSymbol} from './MathQuillEditorSymbols';
 
-const MQ = MathQuill.getInterface(2);
+const MQ = window.MathQuill.getInterface(2);
 const CSS_CDN_URL =
   '//cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.css';
 const CSS_FONT = 'Symbola';

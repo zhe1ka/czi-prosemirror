@@ -38,9 +38,7 @@ var _MathQuillEditorSymbols = require('./MathQuillEditorSymbols');
 
 var MathQuillEditorSymbols = _interopRequireWildcard(_MathQuillEditorSymbols);
 
-var _mathquill = require('node-mathquill/build/mathquill.js');
-
-var _mathquill2 = _interopRequireDefault(_mathquill);
+require('node-mathquill/build/mathquill.js');
 
 var _MathQuillEditorSymbolsPanel = require('./MathQuillEditorSymbolsPanel');
 
@@ -80,7 +78,7 @@ var babelPluginFlowReactPropTypes_proptype_MathQuillEditorSymbol = require('./Ma
 // eslint-disable-next-line no-unused-vars
 
 
-var MQ = _mathquill2.default.getInterface(2);
+var MQ = window.MathQuill.getInterface(2);
 var CSS_CDN_URL = '//cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.css';
 var CSS_FONT = 'Symbola';
 
